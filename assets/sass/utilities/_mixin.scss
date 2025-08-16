@@ -1,0 +1,40 @@
+@mixin title {
+    font-size: 4rem;
+
+    @media (max-width: 991px) {
+        font-size: 3.5rem;
+    }
+
+    @media (max-width: 768px) {
+        font-size: 3rem;
+    }
+
+    @media (max-width: 576px) {
+        font-size: 2rem;
+    }
+}
+
+@mixin content {
+    font-size: 2rem;
+
+    @media (max-width: 768px) {
+        font-size: 1.5rem;
+    }
+
+    @media (max-width: 576px) {
+        font-size: 1rem;
+    }
+}
+
+@mixin btn($tb, $lr) {
+    background-color: $green;
+    color: $red;
+    border-radius: 5px;
+    padding: $tb $lr;
+    transition: all .3s;
+
+    &:hover {
+        background-color: rgb(19, 16, 16);
+        color: $green;
+    }
+}
