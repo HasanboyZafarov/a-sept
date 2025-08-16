@@ -3,10 +3,16 @@
     top: 0;
     left: 0;
     width: 100%;
-    padding-top: 20px;
+    z-index: 999;
+    padding: 10px 0;
 
     &.active {
-        padding-top: 10px;
+        background: $white;
+        box-shadow: 0px 1px 10px $white;
+
+        .header__content {
+            background: 0;
+        }
     }
 
     &__content {
