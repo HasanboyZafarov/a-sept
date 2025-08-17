@@ -1,5 +1,4 @@
 @charset "UTF-8";
-@import url("https://fonts.googleapis.com/css2?family=Libertinus+Sans:ital,wght@0,400;0,700;1,400&display=swap");
 * {
   margin: 0;
   padding: 0;
@@ -13,7 +12,7 @@ body {
   display: flex;
   flex-direction: column;
   min-height: 100vh;
-  font-family: "Libertinus Sans", sans-serif;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
   scroll-behavior: smooth;
 }
 
@@ -210,6 +209,22 @@ img {
 }
 .header__content__right__bars.active span:nth-child(3) {
   transform: rotate(-45deg) translate(8px, -7.5px);
+}
+
+.blur {
+  background: #1E1E1E;
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  right: -100%;
+  z-index: 9;
+  opacity: 0;
+}
+
+.blur.active {
+  opacity: 0.6;
+  right: 0;
 }
 
 .hero {
