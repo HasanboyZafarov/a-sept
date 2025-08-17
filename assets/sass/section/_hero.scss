@@ -1,5 +1,7 @@
 .hero {
-    margin-top: 10px;
+    background: $green;
+    padding: 10px 0;
+    padding-bottom: 30px;
 
     &__content {
         display: flex;
@@ -8,7 +10,7 @@
         position: relative;
 
         &__left {
-            min-width: 400px;
+            min-width: 300px;
             flex: 2;
             border-radius: 20px;
             padding: 1rem;
@@ -43,6 +45,7 @@
                 width: 100%;
                 display: flex;
                 gap: 1rem;
+                flex-wrap: wrap;
 
                 &__card {
                     min-width: 100px;
@@ -67,7 +70,7 @@
 
         &__right {
             position: relative;
-            min-width: 400px;
+            min-width: 300px;
             flex: 1;
             border-radius: 20px;
             display: flex;
