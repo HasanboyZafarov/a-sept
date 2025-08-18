@@ -1,0 +1,77 @@
+.catalog {
+    padding: 20px 0;
+    background: $light-green;
+
+    &__content {
+        &__heading {
+            color: $black;
+            font-size: 54px;
+
+            span {
+                color: $green;
+            }
+        }
+
+        &__wrapper {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 20px;
+            flex-wrap: wrap;
+
+            &__card {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                flex-direction: column;
+                gap: 15px;
+                min-width: 500px;
+                flex: 1;
+                background: $white;
+                border-radius: 20px;
+                padding: 15px;
+
+                &__heading {
+                    font-size: 28px;
+                    color: $text-green;
+                    font-weight: 800;
+                }
+
+                &__tags {
+                    display: flex;
+                    justify-content: start;
+                    align-items: start;
+                    flex-wrap: wrap;
+                    gap: 10px;
+
+                    &__item {
+                        padding: 10px 15px;
+                        background: $light-green;
+                        border-radius: 30px;
+                        color: $text-green;
+                        font-weight: 600;
+                    }
+                }
+
+                &__img {
+                    position: relative;
+                    width: 95%;
+                    height: 300px;
+                    aspect-ratio: 1 / 1; // keeps it square
+                    margin: 0 auto;
+                    background-image: url('../../img/home/card-img.webp');
+                    background-position: center;
+                    background-repeat: no-repeat;
+                    background-size: cover;
+                    border-radius: 20px;
+                }
+
+                &__btn {
+                    @include btn;
+                }
+
+            }
+
+        }
+    }
+}

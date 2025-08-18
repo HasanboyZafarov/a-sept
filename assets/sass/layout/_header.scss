@@ -44,7 +44,7 @@
                 }
             }
 
-            @media (max-width:991px) {
+            @media (max-width:1199px) {
                 position: absolute;
                 left: -100%;
                 top: 120%;
@@ -107,6 +107,8 @@
                 width: 30px;
                 height: 50px;
                 display: none;
+                    gap: 10px;
+
 
                 justify-content: center;
                 align-items: center;
@@ -119,9 +121,8 @@
                     background: $green;
                 }
 
-                @media (max-width:991px) {
+                @media (max-width:1199px) {
                     display: flex;
-                    gap: 10px;
                 }
             }
 
@@ -138,9 +139,5 @@
                 transform: rotate(-45deg) translate(8px, -7.5px);
             }
         }
-
-
-
-
     }
 }
