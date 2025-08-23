@@ -1,16 +1,32 @@
-@mixin title {
+@mixin heading {
     font-size: 4rem;
 
     @media (max-width: 991px) {
-        font-size: 3.5rem;
+        font-size: 3.75rem;
     }
 
     @media (max-width: 768px) {
-        font-size: 3rem;
+        font-size: 3.5rem;
     }
 
     @media (max-width: 576px) {
-        font-size: 2rem;
+        font-size: 3rem;
+    }
+}
+
+@mixin title {
+    font-size: 2rem;
+
+    @media (max-width: 991px) {
+        font-size: 1.5rem;
+    }
+
+    @media (max-width: 768px) {
+        font-size: 1rem;
+    }
+
+    @media (max-width: 576px) {
+        font-size: 1.4rem;
     }
 }
 

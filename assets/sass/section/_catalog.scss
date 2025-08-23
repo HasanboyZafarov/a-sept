@@ -5,7 +5,8 @@
     &__content {
         &__heading {
             color: $black;
-            font-size: 54px;
+            @include heading;
+
 
             span {
                 color: $green;
@@ -31,8 +32,12 @@
                 border-radius: 20px;
                 padding: 15px;
 
+                @media (max-width: 550px) {
+                    min-width: 300px;
+                }
+
                 &__heading {
-                    font-size: 28px;
+                    @include title();
                     color: $text-green;
                     font-weight: 800;
                 }
