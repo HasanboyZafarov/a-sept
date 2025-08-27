@@ -2,15 +2,15 @@
     font-size: 4rem;
 
     @media (max-width: 991px) {
-        font-size: 3.75rem;
-    }
-
-    @media (max-width: 768px) {
         font-size: 3.5rem;
     }
 
+    @media (max-width: 768px) {
+        font-size: 3.2rem;
+    }
+
     @media (max-width: 576px) {
-        font-size: 2.8rem;
+        font-size: 2.5rem;
     }
 }
 
@@ -58,4 +58,10 @@
     &:active {
         scale: .9;
     }
+}
+
+@mixin cardPadding() {
+    padding: 20px;
+
+    @media (max-width: 450px) {}
 }
