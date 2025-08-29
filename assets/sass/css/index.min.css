@@ -783,6 +783,7 @@ img {
 
 .experience {
   background: #EFEFEC;
+  padding: 25px 0;
 }
 .experience__content__heading {
   color: #1E1E1E;
@@ -815,7 +816,7 @@ img {
   margin-top: 25px;
   border-radius: 20px;
   gap: 20px;
-  flex-wrap: wrap-reverse;
+  flex-wrap: wrap;
 }
 .experience__content__inner__left {
   width: 40%;
@@ -825,9 +826,46 @@ img {
   background-size: cover;
   border-radius: 20px;
 }
+@media (max-width: 991px) {
+  .experience__content__inner__left {
+    width: 100%;
+    height: 300px;
+  }
+}
 .experience__content__inner__right {
   width: 55%;
-  padding: 30px;
+  padding: 40px;
   background: #ffffff;
   border-radius: 20px;
+}
+@media (max-width: 991px) {
+  .experience__content__inner__right {
+    width: 100%;
+  }
+}
+@media (max-width: 350px) {
+  .experience__content__inner__right {
+    padding: 20px;
+  }
+}
+.experience__content__inner__right__heading {
+  color: #545B54;
+  margin-bottom: 20px;
+}
+.experience__content__inner__right__heading span {
+  font-weight: 700;
+}
+.experience__content__inner__right__list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 20px;
+}
+.experience__content__inner__right__list__item {
+  color: #545B54;
+  list-style: disc;
+}
+.experience__content__inner__right__list__item span {
+  font-weight: 700;
 }/*# sourceMappingURL=index.min.css.map */
